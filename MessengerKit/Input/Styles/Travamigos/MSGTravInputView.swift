@@ -106,7 +106,7 @@ open class MSGTravInputView: MSGInputView {
         let title = (style as? MSGTravamigosStyle)?.inputButtonText ?? "Send"
         
         sendButton.setAttributedTitle(NSAttributedString(string: title, attributes: [
-            .foregroundColor: tintColor,
+            .foregroundColor: tintColor!,
             .font: UIFont.systemFont(ofSize: 14, weight: .bold)
             ]), for: .normal)
         
